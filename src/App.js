@@ -46,7 +46,7 @@ const togglereminder=(id) =>{
   return (
     <div className='container'>
       
-    <Header title='Task tracker' onAdd={() => setShowAddTask(!showAddTask)} showadd = {showAddTask}/>
+    <Header title='To Do App' onAdd={() => setShowAddTask(!showAddTask)} showadd = {showAddTask}/>
     {showAddTask &&  <AddTask onAdd= {addTask} />}
     {tasks.length > 0 ?<Tasks tasks={ tasks } onDelete={DeleteTask} onToggle={togglereminder} />: 'No tasks to show'}
     </div>
